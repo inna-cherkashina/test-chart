@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таблица показателей</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="table-container">
+      <!-- Таблица Начало -->
+      <div class="table-header">
+        <div class="header-cell header-indicator">Показатель</div>
+        <div class="header-cell header-current-day">Текущий день</div>
+        <div class="header-cell header-yesterday">Вчера</div>
+        <div class="header-cell header-weekday">Этот день недели</div>
+      </div>
+
+      <!-- График Начало -->
+      <div class="chart-container">
+        <h2 id="chart-title">Выберите строку для отображения графика</h2>
+        <canvas id="chart" width="800" height="400"></canvas>
+      </div>
+      <!-- График Конец -->
+
+      <!-- Формируется динамически из chartData -->
+      <div id="table-rows-container"></div>
+      <!-- Таблица Конец -->
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
